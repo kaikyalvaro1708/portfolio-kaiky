@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 /tmp/pdi_update.py)",
+      "Bash(node update_pdi.js)"
+    ]
+  }
+}

@@ -1,0 +1,712 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaiky Alvaro — Engenheiro de Software</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Engenheiro de Software apaixonado por impacto social, cloud e inovação. Estagiário no Itaú Unibanco, FIAP." />
+  <meta name="keywords" content="Kaiky Alvaro, Engenheiro de Software, React, Next.js, AWS, Itaú, FIAP, São Paulo" />
+  <meta name="author" content="Kaiky Alvaro de Miranda" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kaiky Alvaro — Engenheiro de Software" />
+  <meta property="og:description" content="Transformar vidas com tecnologia. Software Engineer @ Itaú Unibanco." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kaiky.codes" />
+  <meta property="og:image" content="foto.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kaiky Alvaro — Engenheiro de Software" />
+
+  <!-- Favicon: letra K em laranja (SVG inline) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF6B35'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='900' font-size='20' fill='white'>K</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+  ============================================= -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">K<span>.</span></a>
+
+      <div class="nav-links">
+        <a href="#hero"     data-pt="Sobre"    data-en="About">Sobre</a>
+        <a href="#jornada"  data-pt="Jornada"  data-en="Journey">Jornada</a>
+        <a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a>
+        <a href="#pdi"      data-pt="PDI"      data-en="PDI">PDI</a>
+        <a href="#contato"  data-pt="Contato"  data-en="Contact">Contato</a>
+      </div>
+
+      <div class="nav-right">
+        <button id="lang-toggle" aria-label="Toggle language">PT → EN</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#hero"     data-pt="Sobre"    data-en="About">Sobre</a>
+      <a href="#jornada"  data-pt="Jornada"  data-en="Journey">Jornada</a>
+      <a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a>
+      <a href="#pdi"      data-pt="PDI"      data-en="PDI">PDI</a>
+      <a href="#contato"  data-pt="Contato"  data-en="Contact">Contato</a>
+      <button id="lang-toggle-mobile" style="font-family:var(--font-body);font-size:14px;font-weight:600;padding:12px 0;color:var(--orange);text-align:left;background:none;border:none;cursor:pointer;">PT → EN</button>
+    </div>
+  </nav>
+
+  <!-- =============================================
+       HERO
+  ============================================= -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Esquerda -->
+        <div class="hero-left">
+          <div class="hero-tag reveal">
+            <span class="dot"></span>
+            <span data-pt="Engenheiro de Software · São Paulo, BR"
+                  data-en="Software Engineer · São Paulo, BR">Engenheiro de Software · São Paulo, BR</span>
+          </div>
+
+          <h1 class="hero-title reveal reveal-delay-1">
+            <span data-pt="Transformar vidas com "
+                  data-en="Transforming lives with ">Transformar vidas com </span><span
+              class="accent"
+              data-pt="tecnologia."
+              data-en="technology.">tecnologia.</span>
+          </h1>
+
+          <p class="hero-subtitle reveal reveal-delay-2"
+             data-pt="Building meaningful software that bridges gaps and creates real-world impact."
+             data-en="Building meaningful software that bridges gaps and creates real-world impact.">
+            Building meaningful software that bridges gaps and creates real-world impact.
+          </p>
+
+          <div class="hero-role reveal reveal-delay-2">
+            <span class="hero-role-text"
+                  data-pt="Estagiário Eng. Software @ Itaú Unibanco"
+                  data-en="Software Eng. Intern @ Itaú Unibanco">Estagiário Eng. Software @ Itaú Unibanco</span>
+            <div class="hero-stack">
+              <span class="stack-chip">Next.js</span>
+              <span class="stack-chip">Terraform</span>
+              <span class="stack-chip">AWS</span>
+            </div>
+          </div>
+
+          <div class="hero-btns reveal reveal-delay-3">
+            <a href="#projetos" class="btn btn-primary"
+               data-pt="Ver projetos" data-en="See projects">Ver projetos</a>
+            <a href="https://www.linkedin.com/in/kaiky-alvaro-077883209/"
+               target="_blank" class="btn btn-outline">LinkedIn</a>
+            <a href="https://github.com/kaikyalvaro1708"
+               target="_blank" class="btn btn-outline">GitHub</a>
+            <a href="#pdi" class="btn btn-outline"
+               data-pt="Ver PDI" data-en="View PDI">Ver PDI</a>
+          </div>
+
+          <div class="hero-stats reveal reveal-delay-4">
+            <div class="stat-item">
+              <div class="stat-num">2,5+</div>
+              <div class="stat-label" data-pt="anos de exp." data-en="years of exp.">anos de exp.</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">3</div>
+              <div class="stat-label" data-pt="prêmios" data-en="awards">prêmios</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">1.8k</div>
+              <div class="stat-label" data-pt="seguidores tech" data-en="tech followers">seguidores tech</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">21</div>
+              <div class="stat-label" data-pt="anos" data-en="years old">anos</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direita: foto + badges -->
+        <div class="hero-right reveal reveal-delay-2">
+          <div style="position:relative; display:inline-block;">
+            <div class="hero-photo-wrap">
+              <img src="img/next-fiap.jpg" alt="Kaiky Alvaro" style="object-position: top center;"
+                onerror="this.parentElement.innerHTML='<div class=hero-photo-placeholder><svg width=64 height=64 viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><path d=\'M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\'></path><circle cx=\'12\' cy=\'7\' r=\'4\'></circle></svg><span>foto.jpg</span></div>'">
+            </div>
+
+            <!-- Badge AWS -->
+            <div class="hero-badge badge-aws">
+              <div class="hero-badge-icon">☁️</div>
+              <div>
+                <div style="font-size:13px;font-weight:700;"
+                     data-pt="AWS Cloud Practitioner"
+                     data-en="AWS Cloud Practitioner">AWS Cloud Practitioner</div>
+                <div style="font-size:11px;font-weight:400;color:var(--gray-500);"
+                     data-pt="Certificado" data-en="Certified">Certificado</div>
+              </div>
+            </div>
+
+            <!-- Badge NEXT -->
+            <div class="hero-badge badge-next">
+              <div class="hero-badge-icon">🏆</div>
+              <div>
+                <div style="font-size:13px;font-weight:700;"
+                     data-pt="3º lugar NEXT"
+                     data-en="3rd Place NEXT">3º lugar NEXT</div>
+                <div style="font-size:11px;font-weight:400;color:var(--gray-500);">FIAP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       JORNADA + OBJETIVOS
+  ============================================= -->
+  <section id="jornada">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label" data-pt="Minha história" data-en="My story">Minha história</p>
+        <h2 class="section-title" data-pt="Jornada &amp; Objetivos" data-en="Journey &amp; Goals">Jornada &amp; Objetivos</h2>
+        <p class="section-desc"
+           data-pt="De Paraisópolis para o Itaú, construindo tecnologia com propósito."
+           data-en="From Paraisópolis to Itaú, building technology with purpose.">
+          De Paraisópolis para o Itaú, construindo tecnologia com propósito.
+        </p>
+      </div>
+
+      <div class="journey-grid">
+
+        <!-- Linha do tempo -->
+        <div class="reveal">
+          <p class="goals-section-label" data-pt="LINHA DO TEMPO" data-en="TIMELINE">LINHA DO TEMPO</p>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-dot" style="color:var(--orange);background:var(--orange);"></div>
+              <p class="timeline-date">2021</p>
+              <p class="timeline-company">UNICEF Brasil · Instituto Tellus · BT</p>
+              <h3 class="timeline-title"
+                  data-pt="Projeto Trilhas Digit@is"
+                  data-en="Trilhas Digit@is Project">Projeto Trilhas Digit@is</h3>
+              <p class="timeline-desc"
+                 data-pt='Aos 16 anos, liderou o desenvolvimento de plataforma educacional para crianças com TDAH e dislexia em Paraisópolis. A iniciativa foi tema de matéria publicada no site da UNICEF Brasil — "Muito promissor para o meu futuro".'
+                 data-en='At 16 years old, led the development of an educational platform for children with ADHD and dyslexia in Paraisópolis — featured by UNICEF Brazil as "Very promising for my future".'>
+                Aos 16 anos, liderou o desenvolvimento de plataforma educacional para crianças com TDAH e dislexia em Paraisópolis. A iniciativa foi tema de matéria publicada no site da UNICEF Brasil — "Muito promissor para o meu futuro".
+              </p>
+              <a href="https://www.unicef.org/brazil/historias/muito-promissor-para-o-meu-futuro"
+                 target="_blank" rel="noopener" class="timeline-link"
+                 data-pt="Ler matéria na UNICEF →" data-en="Read UNICEF article →">Ler matéria na UNICEF →</a>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot" style="color:var(--gray-300);background:var(--gray-300);"></div>
+              <p class="timeline-date">2023</p>
+              <p class="timeline-company">FIAP · IBM</p>
+              <h3 class="timeline-title"
+                  data-pt="Top 10 — IBM &amp; FIAP"
+                  data-en="Top 10 — IBM &amp; FIAP">Top 10 — IBM &amp; FIAP</h3>
+              <p class="timeline-desc"
+                 data-pt="Plataforma de acessibilidade para PcD. Top 10 entre 70 projetos."
+                 data-en="Accessibility platform for people with disabilities. Top 10 among 70 projects.">
+                Plataforma de acessibilidade para PcD. Top 10 entre 70 projetos.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot" style="color:var(--green);background:var(--green);"></div>
+              <p class="timeline-date">2023 – 2025</p>
+              <p class="timeline-company">Emdia | Grupo Santander</p>
+              <h3 class="timeline-title"
+                  data-pt="Full Stack Dev Jr"
+                  data-en="Full Stack Dev Jr">Full Stack Dev Jr</h3>
+              <p class="timeline-desc"
+                 data-pt="Estagiário promovido a Jr. React, .NET, APIs RESTful, Scrum."
+                 data-en="Promoted from intern to Junior Dev. React, .NET, RESTful APIs, Scrum.">
+                Estagiário promovido a Jr. React, .NET, APIs RESTful, Scrum.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot" style="color:var(--gray-300);background:var(--gray-300);"></div>
+              <p class="timeline-date">2024</p>
+              <p class="timeline-company">Hospital das Clínicas – USP · FIAP</p>
+              <h3 class="timeline-title"
+                  data-pt="3º lugar NEXT — VR Cirurgia"
+                  data-en="3rd Place NEXT — VR Surgery">3º lugar NEXT — VR Cirurgia</h3>
+              <p class="timeline-desc"
+                 data-pt="Simulação cirúrgica em Unity/VR. 3º lugar entre 100+ projetos."
+                 data-en="Surgical simulation in Unity/VR. 3rd place among 100+ projects.">
+                Simulação cirúrgica em Unity/VR. 3º lugar entre 100+ projetos.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot" style="color:var(--purple);background:var(--purple);"></div>
+              <p class="timeline-date">2025 →</p>
+              <p class="timeline-company">Itaú Unibanco · São Paulo</p>
+              <h3 class="timeline-title"
+                  data-pt="Eng. Software @ Itaú Unibanco"
+                  data-en="Software Eng. @ Itaú Unibanco">Eng. Software @ Itaú Unibanco</h3>
+              <p class="timeline-desc"
+                 data-pt="Full stack + cloud/IaC. Next.js, Terraform, AWS. AWS Cloud Practitioner certificado."
+                 data-en="Full stack + cloud/IaC. Next.js, Terraform, AWS. AWS Cloud Practitioner certified.">
+                Full stack + cloud/IaC. Next.js, Terraform, AWS. AWS Cloud Practitioner certificado.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Objetivos -->
+        <div class="reveal reveal-delay-2">
+          <p class="goals-section-label"
+             data-pt="OBJETIVOS 2025–2026"
+             data-en="GOALS 2025–2026">OBJETIVOS 2025–2026</p>
+          <div class="goals-col">
+
+            <div class="goal-card" style="border-left-color:var(--orange);">
+              <h3 class="goal-title"
+                  data-pt="Efetivação no Itaú"
+                  data-en="Full-time at Itaú">Efetivação no Itaú</h3>
+              <p class="goal-desc"
+                 data-pt="Analista de Engenharia TI Jr — avançar do estágio para efetivação."
+                 data-en="IT Engineering Analyst Jr — grow from intern to a full-time role.">
+                Analista de Engenharia TI Jr — avançar do estágio para efetivação.
+              </p>
+            </div>
+
+            <div class="goal-card" style="border-left-color:var(--green);">
+              <h3 class="goal-title"
+                  data-pt="Cloud &amp; Backend"
+                  data-en="Cloud &amp; Backend">Cloud &amp; Backend</h3>
+              <p class="goal-desc"
+                 data-pt="GCP, AWS, Azure, Terraform e back-end — aprofundar em arquitetura de soluções e sistemas."
+                 data-en="GCP, AWS, Azure, Terraform and back-end — deepening solution architecture and systems design.">
+                GCP, AWS, Azure, Terraform e back-end — aprofundar em arquitetura de soluções e sistemas.</p>
+            </div>
+
+            <div class="goal-card" style="border-left-color:var(--purple);">
+              <h3 class="goal-title"
+                  data-pt="Startup One – FIAP"
+                  data-en="Startup One – FIAP">Startup One – FIAP</h3>
+              <p class="goal-desc"
+                 data-pt="TCC da graduação. Criar, validar e escalar uma startup de impacto."
+                 data-en="Bachelor's final project. Create, validate, and scale an impact-driven startup.">
+                TCC da graduação. Criar, validar e escalar uma startup de impacto.
+              </p>
+            </div>
+
+            <div class="goal-card" style="border-left-color:var(--amber);">
+              <h3 class="goal-title"
+                  data-pt="Referência &amp; Liderança"
+                  data-en="Reference &amp; Leadership">Referência &amp; Liderança</h3>
+              <p class="goal-desc"
+                 data-pt="Tech lead e referência para jovens talentos de Paraisópolis."
+                 data-en="Tech lead and a reference for young talents from Paraisópolis.">
+                Tech lead e referência para jovens talentos de Paraisópolis.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       MOMENTOS / GALERIA
+  ============================================= -->
+  <section id="momentos">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label" data-pt="Bastidores" data-en="Behind the scenes">Bastidores</p>
+        <h2 class="section-title" data-pt="Momentos" data-en="Moments">Momentos</h2>
+        <p class="section-desc" data-pt="Alguns registros da jornada — de Paraisópolis ao Google." data-en="Some snapshots from the journey — from Paraisópolis to Google.">Alguns registros da jornada — de Paraisópolis ao Google.</p>
+      </div>
+      <div class="momentos-grid reveal">
+        <div class="momento-item">
+          <img src="img/entrada-itau.jpg" alt="Itaú Unibanco Centro Empresarial" loading="lazy">
+          <div class="momento-caption">Itaú Unibanco · Out 2025</div>
+        </div>
+        <div class="momento-item">
+          <img src="img/logo-google.jpg" alt="Google HQ — Google Serve LALA" loading="lazy">
+          <div class="momento-caption">Google HQ · LALA · Jul 2025</div>
+        </div>
+        <div class="momento-item">
+          <img src="img/pitch-santander.jpg" alt="Pitch no Santander" loading="lazy">
+          <div class="momento-caption">Pitch · Santander · 2024</div>
+        </div>
+        <div class="momento-item">
+          <img src="img/podio-next.jpg" alt="Pódio NEXT FIAP — 3º lugar" loading="lazy">
+          <div class="momento-caption">3º lugar NEXT · FIAP · 2024</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       PROJETOS
+  ============================================= -->
+  <section id="projetos">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label"
+           data-pt="Trabalhos selecionados"
+           data-en="Selected work">Trabalhos selecionados</p>
+        <h2 class="section-title"
+            data-pt="Projetos"
+            data-en="Projects">Projetos</h2>
+        <p class="section-desc"
+           data-pt="Do impacto social à realidade virtual — cada projeto com propósito."
+           data-en="From social impact to virtual reality — every project with purpose.">
+          Do impacto social à realidade virtual — cada projeto com propósito.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- FEATURED: Trilhas Digitais -->
+        <div class="project-card project-featured reveal" style="border:1.5px solid var(--green);">
+          <div class="project-banner-img project-featured-img">
+            <img src="img/materia-unicef.png" alt="Matéria UNICEF — Muito promissor para o meu futuro" loading="lazy">
+            <div class="project-banner-badge" style="background:var(--green);">UNICEF BRASIL</div>
+          </div>
+          <div class="project-body project-featured-body">
+            <div class="project-featured-tag-wrap">
+              <p class="project-tag" style="color:var(--green);"
+                 data-pt="Impacto social · 2021 · aos 16 anos"
+                 data-en="Social impact · 2021 · at 16 y.o.">Impacto social · 2021 · aos 16 anos</p>
+              <span class="project-featured-highlight">⭐ Destaque</span>
+            </div>
+            <h3 class="project-title project-featured-title">Trilhas Digit@is</h3>
+            <p class="project-desc project-featured-desc"
+               data-pt='Plataforma educacional para crianças com TDAH e dislexia, desenvolvida aos 16 anos em Paraisópolis. A iniciativa foi tema de matéria publicada pela UNICEF Brasil — "Muito promissor para o meu futuro" — tornando-se referência de tecnologia com impacto social na comunidade.'
+               data-en='Educational platform for children with ADHD and dyslexia, built at 16 in Paraisópolis. The initiative was featured by UNICEF Brazil — "Very promising for my future" — becoming a reference for tech with social impact in the community.'>
+              Plataforma educacional para crianças com TDAH e dislexia, desenvolvida aos 16 anos em Paraisópolis. A iniciativa foi tema de matéria publicada pela UNICEF Brasil — "Muito promissor para o meu futuro" — tornando-se referência de tecnologia com impacto social na comunidade.
+            </p>
+            <a href="https://www.unicef.org/brazil/historias/muito-promissor-para-o-meu-futuro"
+               target="_blank" rel="noopener" class="project-link"
+               data-pt="Ver matéria na UNICEF →" data-en="Read UNICEF article →">Ver matéria na UNICEF →</a>
+          </div>
+        </div>
+
+        <!-- Inclui+ -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-banner" style="background:#E8F0FF;">♿</div>
+          <div class="project-body">
+            <p class="project-tag"
+               data-pt="Acessibilidade · 2023"
+               data-en="Accessibility · 2023">Acessibilidade · 2023</p>
+            <h3 class="project-title">Inclui+</h3>
+            <p class="project-desc"
+               data-pt="Mapeamento de serviços acessíveis para Pessoas com Deficiência. Top 10 entre 70 projetos — IBM &amp; FIAP."
+               data-en="Mapping accessible services for People with Disabilities. Top 10 among 70 projects — IBM &amp; FIAP.">
+              Mapeamento de serviços acessíveis para Pessoas com Deficiência. Top 10 entre 70 projetos — IBM &amp; FIAP.
+            </p>
+          </div>
+        </div>
+
+        <!-- VRcare+ -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-banner" style="background:#E8F5EE;">🔬</div>
+          <div class="project-body">
+            <p class="project-tag"
+               data-pt="VR · Unity · 2024"
+               data-en="VR · Unity · 2024">VR · Unity · 2024</p>
+            <h3 class="project-title">VRcare+</h3>
+            <p class="project-desc"
+               data-pt="Simulação cirúrgica imersiva em VR, desenvolvida com Hospital das Clínicas – USP. 3º lugar no NEXT FIAP entre 100+ projetos como líder técnico."
+               data-en="Immersive VR surgical simulation, built with Hospital das Clínicas – USP. 3rd place at NEXT FIAP among 100+ projects as tech lead.">
+              Simulação cirúrgica imersiva em VR, desenvolvida com Hospital das Clínicas – USP. 3º lugar no NEXT FIAP entre 100+ projetos como líder técnico.
+            </p>
+            <a href="https://www.instagram.com/reel/DElWhtMyCBe/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+               target="_blank" rel="noopener" class="project-link"
+               data-pt="Ver vídeo do projeto →" data-en="Watch project video →">Ver vídeo do projeto →</a>
+          </div>
+        </div>
+
+        <!-- Startup One -->
+        <div class="project-card reveal reveal-delay-3" style="border:1.5px solid var(--purple);">
+          <div class="project-banner" style="background:#F3F0FF;">🚀</div>
+          <div class="project-body">
+            <p class="project-tag" style="color:var(--purple);"
+               data-pt="Startup · 2025 — em construção"
+               data-en="Startup · 2025 — in progress">Startup · 2025 — em construção</p>
+            <h3 class="project-title">Startup One – FIAP</h3>
+            <p class="project-desc"
+               data-pt="TCC da graduação. Criar, validar e escalar uma startup com impacto real. Fique ligado."
+               data-en="Bachelor's final project. Creating, validating, and scaling a startup with real impact. Stay tuned.">
+              TCC da graduação. Criar, validar e escalar uma startup com impacto real. Fique ligado.
+            </p>
+          </div>
+        </div>
+
+      </div> </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       PDI + CERTS + STACK
+  ============================================= -->
+  <section id="pdi">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label"
+           data-pt="Desenvolvimento"
+           data-en="Development">Desenvolvimento</p>
+        <h2 class="section-title"
+            data-pt="PDI · Certs · Stack"
+            data-en="IDP · Certs · Stack">PDI · Certs · Stack</h2>
+        <p class="section-desc"
+           data-pt="Plano de desenvolvimento individual, pontos fortes, certificações e tecnologias."
+           data-en="Individual development plan, strengths, certifications, and tech stack.">
+          Plano de desenvolvimento individual, pontos fortes, certificações e tecnologias.
+        </p>
+      </div>
+
+      <!-- Tabela PDI expandida -->
+      <div class="reveal pdi-full">
+        <div class="pdi-table-wrap">
+          <table class="pdi-table">
+            <thead>
+              <tr>
+                <th data-pt="Prazo" data-en="Timeframe">Prazo</th>
+                <th class="col-prof" data-pt="Profissional" data-en="Professional">Profissional</th>
+                <th class="col-acad" data-pt="Acadêmico" data-en="Academic">Acadêmico</th>
+                <th class="col-pess" data-pt="Pessoal" data-en="Personal">Pessoal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="pdi-period" data-pt="Curto" data-en="Short">Curto</div>
+                  <div class="pdi-sub">até 6 meses</div>
+                </td>
+                <td>
+                  <ul class="pdi-bullets">
+                    <li>Efetivação no Itaú como Analista Jr.</li>
+                    <li>Me aprofundar em GCP, Azure e AWS</li>
+                    <li>Atuar em mais entregas de cloud e IaC</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="pdi-bullets">
+                    <li>Concluir semestre na FIAP</li>
+                    <li>Avançar no Startup One</li>
+                    <li>Iniciar preparação para AZ-900</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="pdi-bullets">
+                    <li>Manter criação de conteúdo (Kaiky.codes)</li>
+                    <li>Cuidar da saúde e praticar academia</li>
+                    <li>Planejamento financeiro</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="pdi-period" data-pt="Médio" data-en="Medium">Médio</div>
+                  <div class="pdi-sub">6m – 2 anos</div>
+                </td>
+                <td>
+                  <ul class="pdi-bullets">
+                    <li>Conquistar Azure AZ-900 e AWS SAA-C03</li>
+                    <li>Liderar features completas no Itaú</li>
+                    <li>Evoluir para Analista Pleno</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="pdi-bullets">
+                    <li>Concluir a graduação na FIAP</li>
+                    <li>Especialização em cloud ou arquitetura</li>
+                    <li>Inglês conversacional — prep. TOEFL</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="pdi-bullets">
+                    <li>Referência na comunidade de Paraisópolis</li>
+                    <li>Alcançar 5k seguidores no Kaiky.codes</li>
+                    <li>Consolidar saúde e rotina</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="pdi-period" data-pt="Longo" data-en="Long">Longo</div>
+                  <div class="pdi-sub">2 – 5 anos</div>
+                </td>
+                <td>
+                  <ul class="pdi-bullets">
+                    <li>Atuar como Tech Lead ou Eng. Sênior</li>
+                    <li>Liderar projetos de escala</li>
+                    <li>Ser referência técnica no time</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="pdi-bullets">
+                    <li>Pós-graduação no exterior</li>
+                    <li>Especialização em IA ou cloud e arquitetura de sistemas</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="pdi-bullets">
+                    <li>Empreender com startup de impacto social</li>
+                    <li>Inspirar jovens de Paraisópolis a seguir tech</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Pontos Fortes + Em Desenvolvimento -->
+      <div class="pontos-grid reveal">
+        <div class="pontos-card fortes">
+          <h3 class="pontos-title">✅ Pontos Fortes</h3>
+          <div class="pontos-list">
+            <div class="pontos-item"><span class="pontos-dot" style="background:var(--green);"></span>Liderança e iniciativa — UNICEF, LALA, Hospital das Clínicas</div>
+            <div class="pontos-item"><span class="pontos-dot" style="background:var(--green);"></span>Capacidade de aprendizado rápido e autodidata</div>
+            <div class="pontos-item"><span class="pontos-dot" style="background:var(--green);"></span>Experiência prática full stack — React, Next.js, .NET, Java</div>
+            <div class="pontos-item"><span class="pontos-dot" style="background:var(--green);"></span>Comunicação e impacto social — criador de conteúdo tech</div>
+            <div class="pontos-item"><span class="pontos-dot" style="background:var(--green);"></span>Resiliência sob pressão — entregas em prazos apertados</div>
+          </div>
+        </div>
+        <div class="pontos-card desenvolver">
+          <h3 class="pontos-title">🚧 Em Desenvolvimento</h3>
+          <div class="pontos-list">
+            <div class="pontos-item"><span class="pontos-dot" style="background:var(--orange);"></span>Comunicação — evoluir influência e apresentações técnicas</div>
+            <div class="pontos-item"><span class="pontos-dot" style="background:var(--orange);"></span>Arquitetura de soluções — desenho e documentação de sistemas</div>
+            <div class="pontos-item"><span class="pontos-dot" style="background:var(--orange);"></span>Aprofundamento técnico — back-end, cloud e infraestrutura</div>
+            <div class="pontos-item"><span class="pontos-dot" style="background:var(--orange);"></span>AWS avançado — expandir além do Cloud Practitioner</div>
+            <div class="pontos-item"><span class="pontos-dot" style="background:var(--orange);"></span>Inglês conversacional — já técnico, evoluir o oral</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificações + Stack -->
+      <div class="pdi-certs-stack reveal">
+        <div>
+          <p class="pdi-block-title" data-pt="Certificações" data-en="Certifications">Certificações</p>
+          <div class="certs-list">
+
+            <div class="cert-card">
+              <div>
+                <div class="cert-name">Huawei Tech Essentials</div>
+                <div class="cert-sub">HCIA — Cloud &amp; AI Fundamentals</div>
+              </div>
+              <span class="cert-badge badge-done" data-pt="Concluída" data-en="Done">Concluída</span>
+            </div>
+
+            <div class="cert-card">
+              <div>
+                <div class="cert-name">AWS Cloud Practitioner</div>
+                <div class="cert-sub">CLF-C02</div>
+              </div>
+              <span class="cert-badge badge-done" data-pt="Concluída" data-en="Done">Concluída</span>
+            </div>
+
+            <div class="cert-card">
+              <div>
+                <div class="cert-name">Azure Fundamentals</div>
+                <div class="cert-sub">AZ-900</div>
+              </div>
+              <span class="cert-badge badge-focus" data-pt="Foco atual" data-en="Current focus">Foco atual</span>
+            </div>
+
+            <div class="cert-card">
+              <div>
+                <div class="cert-name">AWS Solutions Architect</div>
+                <div class="cert-sub">SAA-C03</div>
+              </div>
+              <span class="cert-badge badge-planned" data-pt="Planejada" data-en="Planned">Planejada</span>
+            </div>
+
+            <div class="cert-card">
+              <div>
+                <div class="cert-name">TOEFL</div>
+                <div class="cert-sub" data-pt="Inglês avançado" data-en="Advanced English">Inglês avançado</div>
+              </div>
+              <span class="cert-badge badge-planned" data-pt="Médio prazo" data-en="Mid-term">Médio prazo</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+          <p class="pdi-block-title">Stack</p>
+          <div class="stack-chips">
+            <span class="chip"><span class="chip-dot" style="background:var(--orange);"></span>React/Next.js</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--orange);"></span>TypeScript</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--purple);"></span>Java/.NET</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--green);"></span>AWS</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--green);"></span>Azure</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--green);"></span>Terraform</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--blue);"></span>CI/CD</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--gray-500);"></span>SQL/Git</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       FOOTER / CTA
+  ============================================= -->
+  <footer id="contato">
+    <div class="footer-inner">
+      <p class="footer-label reveal"
+         data-pt="Vamos construir juntos"
+         data-en="Let's build together">Vamos construir juntos</p>
+      <h2 class="footer-title reveal reveal-delay-1"
+          data-pt="Vamos conversar?"
+          data-en="Let's talk?">Vamos conversar?</h2>
+      <p class="footer-email reveal reveal-delay-2">kaikialvaro57@gmail.com</p>
+
+      <div class="footer-btns reveal reveal-delay-3">
+        <a href="mailto:kaikialvaro57@gmail.com"
+           class="btn btn-footer-primary"
+           data-pt="Enviar email"
+           data-en="Send email">Enviar email</a>
+        <a href="https://www.linkedin.com/in/kaiky-alvaro-077883209/"
+           target="_blank" class="btn btn-footer-ghost">LinkedIn</a>
+        <a href="https://github.com/kaikyalvaro1708"
+           target="_blank" class="btn btn-footer-ghost">GitHub</a>
+        <a href="https://www.instagram.com/kaiky.codes/"
+           target="_blank" class="btn btn-footer-ghost">kaiky.codes</a>
+      </div>
+
+      <div class="footer-bottom reveal reveal-delay-4">
+        <p data-pt="© 2026 Kaiky Alvaro de Miranda · Feito com ☕ em São Paulo"
+           data-en="© 2026 Kaiky Alvaro de Miranda · Made with ☕ in São Paulo">
+          © 2026 Kaiky Alvaro de Miranda · Feito com ☕ em São Paulo
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
