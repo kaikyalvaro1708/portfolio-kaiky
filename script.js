@@ -188,3 +188,14 @@ async function loadGitHubRepos() {
 }
 
 loadGitHubRepos();
+
+/* =============================================
+   INSTAGRAM VIDEO — garante autoplay em loop
+============================================= */
+document.querySelectorAll('.insta-video').forEach(video => {
+  video.muted = true;
+  const tryPlay = () => { const p = video.play(); if (p) p.catch(() => {}); };
+  tryPlay();
+  video.addEventListener('pause', () => { if (!document.hidden) tryPlay(); });
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) tryPlay(); });
+});
